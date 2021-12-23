@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 @Component
-public class Mapper {
+public class Converter {
 
 	@Autowired
 	private ModelMapper mapper;

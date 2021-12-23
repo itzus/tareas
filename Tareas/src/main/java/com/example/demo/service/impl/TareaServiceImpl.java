@@ -9,7 +9,7 @@ import com.example.demo.dto.TareaDto;
 import com.example.demo.model.TareaEntity;
 import com.example.demo.repository.TareaRepository;
 import com.example.demo.service.ITareaService;
-import com.example.demo.util.Mapper;
+import com.example.demo.util.Converter;
 
 @Service
 public class TareaServiceImpl implements ITareaService {
@@ -17,7 +17,7 @@ public class TareaServiceImpl implements ITareaService {
 	@Autowired
 	private TareaRepository repositorio;
 	@Autowired
-	private Mapper mapper;
+	private Converter mapper;
 
 	@Override
 	public List<TareaDto> getTareas() {
